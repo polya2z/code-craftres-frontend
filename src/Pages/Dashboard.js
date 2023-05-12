@@ -22,7 +22,7 @@ function Dashboard() {
     getUserDetails();
   }, []);
   async function getUserDetails(){
-    const api_data = await fetch("/api/user-details", {
+    const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/user-details", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
     });
@@ -32,7 +32,7 @@ function Dashboard() {
 
   async function logoutUser(){
     setLoading(true);
-    const api_data = await fetch("/api/logout/", {
+    const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/logout/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
     });

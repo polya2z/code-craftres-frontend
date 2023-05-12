@@ -11,7 +11,7 @@ function Signup() {
     async function registerUser(e) {
         e.preventDefault();
         setLoading(true);
-        const api_data = await fetch("/api/register/", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/register/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

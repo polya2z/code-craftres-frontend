@@ -33,7 +33,7 @@ function Notices() {
     async function saveNotice(e) {
         e.preventDefault();
 
-        const api_data = await fetch("/api/admin/notice", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/notice", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -54,7 +54,7 @@ function Notices() {
 
     async function getNotices() {
         setLoading(true);
-        const api_data = await fetch("/api/admin/notice", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/notice", {
             method: "GET",
         });
 
@@ -64,7 +64,7 @@ function Notices() {
     }
 
     async function deleteNotice(_id) {
-        const api_data = await fetch("/api/admin/notice", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/notice", {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

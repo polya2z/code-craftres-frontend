@@ -10,7 +10,7 @@ function Login() {
     async function loginUser(e) {
         e.preventDefault();
         setLoading(true);
-        const api_data = await fetch("/admin/auth/login/", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/admin/auth/login/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

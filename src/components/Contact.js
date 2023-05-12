@@ -10,7 +10,7 @@ function Contact() {
     async function submitData(e) {
         e.preventDefault();
         setLoading(true);
-        const api_data = await fetch("/api/new/query", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/new/query", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

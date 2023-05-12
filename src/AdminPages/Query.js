@@ -18,7 +18,7 @@ function Query() {
     }
 
     async function getQuery() {
-        const api_data = await fetch("/api/admin/query", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/query", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
         });

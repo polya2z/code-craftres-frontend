@@ -19,7 +19,7 @@ function Member() {
     }
 
     async function getUsers() {
-        const api_data = await fetch("/api/admin/users/new", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/users/new", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
         });
@@ -30,7 +30,7 @@ function Member() {
 
     async function acceptUser(_id) {
         setLoading(true)
-        const api_data = await fetch(`/api/admin/users/accept/${_id}`, {
+        const api_data = await fetch(`https://code-crafters-y4c1.onrender.com/api/admin/users/accept/${_id}`, {
             method: "GET",
             headers: { "Content-Type": "application/json" },
         });

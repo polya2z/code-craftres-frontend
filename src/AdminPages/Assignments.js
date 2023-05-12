@@ -19,7 +19,7 @@ function Assignments() {
     }
 
     async function getAssignment() {
-        const api_data = await fetch("/api/admin/assignment", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/assignment", {
             method: "GET",
             headers: { "Content-Type": "application/json" },
         });
@@ -43,7 +43,7 @@ function Assignments() {
     async function saveAssignment(e) {
         e.preventDefault();
 
-        const api_data = await fetch("/api/admin/assignment/new/", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/assignment/new/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -62,7 +62,7 @@ function Assignments() {
 
 
     async function deleteAssignment(_id) {
-        const api_data = await fetch("/api/admin/assignment", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/admin/assignment", {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

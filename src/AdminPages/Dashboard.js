@@ -27,7 +27,7 @@ function Dashboard() {
 
     async function logoutUser() {
         setLoading(true);
-        const api_data = await fetch("/admin/auth/logout", {
+        const api_data = await fetch("https://code-crafters-y4c1.onrender.com/admin/auth/logout", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
         });

@@ -1,5 +1,5 @@
 async function Auth() {
-    const api_data = await fetch("/api/auth", {
+    const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/auth", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
     });

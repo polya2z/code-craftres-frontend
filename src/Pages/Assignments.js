@@ -23,7 +23,7 @@ function Assignments() {
 
   async function getAssignment() {
     setLoading(true)
-    const api_data = await fetch("/api/assignment", {
+    const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/assignment", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     });
@@ -36,13 +36,13 @@ function Assignments() {
 
   const [Status, setStatus] = useState([]);
   async function getUserDetails() {
-    const api_data = await fetch("/api/user-details", {
+    const api_data = await fetch("https://code-crafters-y4c1.onrender.com/api/user-details", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
     });
     const data = await api_data.json();
 
-    const api_data1 = await fetch('/api/assignment/status', {
+    const api_data1 = await fetch('https://code-crafters-y4c1.onrender.com/api/assignment/status', {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
