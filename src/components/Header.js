@@ -4,7 +4,12 @@ function Header() {
     return (
 
         <div class="relative h-screen overflow-hidden bg-indigo-900">
-            <img alt='s' src="https://images.pexels.com/photos/1809644/pexels-photo-1809644.jpeg?auto=compress&cs=tinysrgb&w=1600" class="absolute object-cover w-full h-full" />
+            <video class="absolute object-cover w-full h-full" autoPlay 
+        loop
+        muted
+      >
+        <source src="video.mp4" type="video/mp4" />
+    </video>
             <div class="absolute inset-0 bg-black opacity-25">
             </div>
             <header class="absolute top-0 left-0 right-0 z-20">
